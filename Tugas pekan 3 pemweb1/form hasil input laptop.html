@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pesanan Laptop</title>
+</head>
+<body bgcolor="#dbdbdb">
+    <br>
+    <table align="center" cellspacing="0" width="500" bgcolor="white">
+        <tr>
+            <td align="center">Home</td>
+            <td align="center">|</td>
+            <td align="center">Register</td>
+            <td align="center">|</td>
+            <td align="center">Policy</td>
+            <td align="center">|</td>
+            <td align="center">About</td>
+        </tr>
+    </table>
+    <br>
+    <form>
+    <table align="center" width="800" border="0">
+        <tr>
+            <td rowspan="4" width="200"><img src="image/laptop msi modern 14.JPG" alt="gambar laptop" width="200"></td>
+            <td>Title Here :</td>
+            <td>MSI Modern 14 b5m $1000</td>
+        </tr>
+        <tr>
+            <td valign="top">Description :</td>
+            <td valign="top">
+                Year : 2022
+                <br>Model : Modern 14 b5m
+                <br>Color : Grey
+            </td>
+        </tr>
+        <tr>
+            <td>Total Amount :</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>Pay to :</td>
+            <td>123-456-789-0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label for="pembayaran">Payment Type :</label></td>
+            <td>  
+                <select id="pembayaran">
+                    <option value="pil">Visa Debit</option>
+                    <option value="pil2">Credit</option>
+                    <option value="pil3">Virtual Account</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Account Holder :</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td valign="top">Account No :</td>
+            <td><input type="Number">
+                <br>*if the transaction is for 3 person, choose 3 from drop-down
+                <br>
+                <ul style="list-style-type:none;">
+                    <li>
+                        <input type="checkbox" id="sms">
+                        <label for="sms">Send to Mobile Phone</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="email">
+                        <label for="email">Send me copy of transaction</label>
+                    </li>
+                </ul></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Send to Mobile Phone :</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Send to Email :</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="CENTER" colspan="2">
+                <br>
+                <input type="button" value="Pay using QuidLink">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

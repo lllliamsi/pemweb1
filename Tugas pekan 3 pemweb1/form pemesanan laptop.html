@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan laptop</title>
+</head>
+<body bgcolor="#dbdbdb">
+    <br>
+    <table align="center" cellspacing="0" width="700" bgcolor="white">
+        <tr>
+            <td align="center">Home</td>
+            <td align="center">|</td>
+            <td align="center">Generate</td>
+            <td align="center">|</td>
+            <td align="center">Transaction History</td>
+            <td align="center">|</td>
+            <td align="center">Policy</td>
+            <td align="center">|</td>
+            <td align="center">Logout</td>
+        </tr>
+    </table>
+    <br>
+    <form action="form hasil input laptop.html">
+    <table align="center" width="720" border="0">
+        <tr>
+            <td rowspan="4" width="200"><img src="image/laptop msi modern 14.JPG" alt="gambar laptop" width="200"></td>
+            <td width="160"><label for="judul">Title Here :</label></td>
+            <td><input type="text" id="judul;"></td>
+        </tr>
+        <tr>
+            <td valign="top"><label for="desc">Description :</label></td>
+            <td><textarea type="text" id="desc" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="nomor akun">Account Number :</label></td>
+            <td><input type="number" id="nomor akun"></td>
+        </tr>
+        <tr>
+            <td><label for="bang">Bank :</label></td>
+            <td>  
+                <select id="bang">
+                    <option value="pil">HSBC</option>
+                    <option value="pil2">BNI</option>
+                    <option value="pil3">BSM</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td valign="top">Account Holder :</td>
+            <td><input type="Number">
+                <br>*if the transaction is for 3 person, choose 3 from drop-down
+                <br>
+                <ul style="list-style-type:none;">
+                    <li>
+                        <input type="checkbox" id="sms">
+                        <label for="sms">Send to Mobile Phone</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="email">
+                        <label for="email">Send to Email</label>
+                    </li>
+                </ul></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Send to Mobile Phone :</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Send to Email :</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="CENTER" colspan="2">
+                <br>
+                <button type="submit">Checkout</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
