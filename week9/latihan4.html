@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biaya Parkir</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Biaya Parkir</legend>
+            <table border="1">
+                <thead>
+                    <th>Jam Masuk</th>
+                    <th>Jam Keluar</th>
+                    <th>Lama Parkir</th>
+                    <th>Biaya Parkir</th>
+                </thead>
+                <tbody>
+                    <td> <input type="number" id="jamMasuk" value="0" placeholder="Jam Masuk" onchange="bayar()"> </td>
+                    <td> <input type="number" id="jamKeluar" value="0" placeholder="Jam Keluar" onchange="bayar()"> </td>
+                    <td> <input type="number" id="lamaParkir" value="0" placeholder=""> </td>
+                    <td> <input type="number" id="biaya" value="0"> </td>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+<script>
+    function bayar(){
+        // variabel jam masuk
+        let jamMasuk = Number(document.getElementById("jamMasuk").value);
+        // variabel jam keluar
+        let jamKeluar = Number(document.getElementById("jamKeluar").value);
+        // lama parkir
+        let lamaParkir = jamKeluar - jamMasuk;
+        document.getElementById("lamaParkir").value = lamaParkir;
+
+        // logic biaya parkir
+        let biayaParkir;
+
+        if (lamaParkir <= 2) {
+            biayaParkir = 3000;
+            document.getElementById("biaya").value = biayaParkir;
+        } else {
+            biayaParkir = 3000 + ((lamaParkir - 2) * 1000);
+            document.getElementById("biaya").value = biayaParkir;
+        }
+    }
+</script>
+</html>
