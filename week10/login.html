@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form onsubmit="kirim()" id="form">
+      
+      Username : <input type="text" id="username" /><br />
+      
+      Password : <input type="password" id="password" />
+      <br />
+      <button type="submit">Login</button>
+
+      <p>Yang Bener</p>
+      <p>Username : admin</p>
+      <p>Password : integrity</p>
+
+      <script>
+        function kirim() {
+          let nama = document.getElementById("username").value;
+          let pass = document.getElementById("password").value;
+          let form = document.getElementById("form");
+          if (nama == "admin" && pass == "integrity") {
+            form.setAttribute("action", "dashboard.html");
+            window.alert("Login Berhasil");
+          } else {
+            window.alert("Login Gagal");
+          }
+          console.log(pass + nama);
+        }
+      </script>
+    </form>
+  </body>
+</html>

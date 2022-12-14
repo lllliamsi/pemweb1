@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="ngirim()" id="form">
+
+        Nama Pelanggan : <input type="text" id="username" maxlength="30" required><br>
+
+        Email : <input type="email" id="email" required><br>
+
+        Jam Keberangkatan : <input type="time" id="time" required><br>
+
+        Tujuan Keberangkatan : <input type="text" id="tujuan" required><br>
+
+        Jumlah Tiket : <input type="number" id="tiket" min="1" max="10" required><br>
+
+        <button type="submit">Kirim</button>
+
+    </form>
+    
+</body>
+</html>
